@@ -1,0 +1,26 @@
+.nosotros h4{
+    background-color: $fondo-rosa;
+    text-align: $titulos-aligne;
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+.nosotros-img{
+    display: flex;
+    flex-direction: row;
+    align-items: $titulos-aligne;
+    justify-content: $titulos-aligne;
+    margin: 2rem;
+}
+
+@media(min-width: 768px){
+    .nosotros h4{
+        font-size: 1.4rem;
+    }
+}
+
+@media(min-width: 1023px){
+    .nosotros h4{
+        font-size: 1.7rem;
+    }
+}

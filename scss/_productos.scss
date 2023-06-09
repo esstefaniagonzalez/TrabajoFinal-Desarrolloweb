@@ -1,0 +1,41 @@
+.padre-productos{
+    @include flex-column-centrado;
+}
+
+.recuadro{
+    margin: $titulos-margin;
+    border: solid 5px $rosa;
+}
+
+.padre-carousel-collares, .padre-carousel-pulseras, .padre-carousel-accesorios{
+    @extend .recuadro
+}
+
+@media (max-width: 768px){
+    .padre-carousel-anillos, .padre-carousel-collares, .padre-carousel-pulseras, .padre-carousel-accesorios{
+        max-width: 60vh;
+        max-height: 60vh;
+    }
+}
+
+@media(min-width: 769px){
+    .padre-carousel-anillos, .padre-carousel-collares, .padre-carousel-pulseras, .padre-carousel-accesorios{
+        max-width: 80vh;
+        max-height: 80vh;
+    }
+}
+
+@media (min-width: 1023px){
+    .padre-productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: $titulos-aligne;
+        justify-content: $titulos-aligne;
+    }
+
+    .padre-carousel-anillos, .padre-carousel-collares, .padre-carousel-pulseras, .padre-carousel-accesorios{
+        max-width: 70vh;
+        max-height: 70vh;
+    }
+}

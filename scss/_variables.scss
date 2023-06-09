@@ -1,0 +1,23 @@
+$fondo-rosa:#E0ACD5;
+$rosa: #D66BA0;
+$lila: #AF4D98;
+$negro: black;
+$fondo-gradiente-1: #f3a8e2;
+$fondo-gradiente-2: #f1e2dc;
+
+$titulos-size: 2rem;
+$titulos-margin:2rem;
+$titulos-aligne: center;
+$titulos-padding: 2rem;
+
+@mixin flex-column-centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: $titulos-aligne;
+    justify-content: $titulos-aligne;
+}
+
+@mixin medidas ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}

@@ -1,0 +1,313 @@
+.bienvenida{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: $titulos-aligne;
+
+    h1{
+        color: $rosa;
+        text-align: $titulos-aligne;
+        margin: $titulos-margin;
+    }
+
+    p{
+        text-align: $titulos-aligne;
+    }
+}
+
+@media (max-width:768px) {
+    .bienvenida img{
+        display: none;
+    }
+
+    p{
+        margin: $titulos-margin;
+    }
+}
+
+@media (min-width: 769px) {
+    .bienvenida{
+        max-height: 28rem;
+        font-size: 1.2rem;
+        padding: 1rem;
+        margin: $titulos-margin - 1;
+    }
+
+    .textos{
+        max-width: 26rem;
+        align-items: left;
+        justify-content: left;
+        margin: $titulos-margin - 1;
+    }
+
+    .foto-il{
+        @include medidas (16rem, 16rem);
+        border: solid 5px $rosa;
+        padding: 1rem;
+        margin: 3rem 1rem;
+    }
+}
+
+
+
+@media (min-width: 1023px){
+    .bienvenida{
+        font-size: 1.4rem;
+        margin: $titulos-margin - 1;
+    }
+    .textos{
+        max-width: 30rem;
+        max-height: 30rem;
+    }
+
+    .foto-il{
+        width: 22rem ;
+        height: 22rem;
+        margin: 3rem 1rem;
+    }
+}
+
+.texto{
+    background-image: radial-gradient(circle, $fondo-gradiente-1, $fondo-gradiente-2);
+}
+
+
+
+/*banner de texto*/
+
+#sect{
+    color: $lila ;
+    text-align: $titulos-aligne;
+    margin: $titulos-margin;
+}
+
+@media (max-width: 768px){
+    .text{
+        font-size: $titulos-size - 1;
+    }
+}
+
+@media (min-width: 769px) {
+    .text{
+
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media (min-width: 1023px){
+    .text{
+        font-size: $titulos-size;
+    }
+}
+
+
+
+
+/*seccion de preguntas frecuentes - informacion*/
+
+@media (max-width: 768px){
+    .col{
+        font-size: $titulos-size - 1;
+    }
+
+    .columna3{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .col{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1023px){
+    .col{
+        font-size: 1.6rem;
+    }
+}
+
+.columna1, .columna2, .columna3{
+    padding: 1.5rem;
+    justify-content: $titulos-aligne;
+    background-color: $fondo-rosa;
+    margin: $titulos-margin;
+}
+
+
+
+
+/*seccion de comentarios de clientes*/
+
+@media (max-width: 768px){
+    .coment{
+        font-size: $titulos-size - 1;
+    }
+
+    h5{
+        font-size: $titulos-size - 1;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 768px){
+    .coment{
+        font-size: 1.2rem;
+    }
+
+    h5{
+        font-size: 1.2rem;
+        padding: $titulos-padding;
+    }
+}
+
+@media (min-width: 1023px){
+    .coment{
+        font-size: 1.6rem;
+    }
+
+    h5{
+        font-size: $titulos-size;
+        padding: $titulos-padding;
+    }
+}
+
+
+
+
+/*seccion de productos favoritos o destacados*/
+
+.favs{
+    display: flex;
+    flex-direction: column;
+    align-items: $titulos-aligne;
+    justify-content: $titulos-aligne;
+    margin: $titulos-margin;
+    
+    img{
+        padding: $titulos-padding - 1;
+        border: solid 5px $rosa;
+        margin: 1rem 2rem;
+    }
+}
+
+
+@media (max-width: 76px){
+    .foto2, .foto3{
+        display: none;
+    }
+}
+
+@media (max-width: 1023px){
+    .foto3{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .foto1, .foto2, .foto3{
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .favs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: $titulos-aligne;
+        justify-content: $titulos-aligne;
+    }
+}
+
+@media (min-width: 1023px){
+    .foto1, .foto2, .foto3{
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .foto1, .foto2, .foto3{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+
+
+/*seccion del cupon de descuento*/
+
+
+#cupon{
+    background-color: $fondo-rosa;
+}
+
+.cupon-h4{
+    text-align: $titulos-aligne;
+    font-size: 1.2rem;
+    margin: $titulos-margin - 1;
+}
+
+.cupon-p{
+    text-align: $titulos-aligne;
+    font-size: 1.5rem;
+    background-color:$lila;
+}
+
+.cupon-img{
+    height: 4rem;
+    width: 4rem;
+}
+
+.cupon-imagen{
+    display: flex;
+    flex-direction: row;
+    align-items: $titulos-aligne;
+    justify-content: $titulos-aligne;
+}
+
+
+
+/*seccion del footer: contactanos*/
+
+.foot-p{
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.foot1, .foot2, .foot3{
+    height: 3rem;
+    width: 3rem;
+}
+
+@media (min-width: 768px){
+    .foot-p{
+        font-size: 1.3rem;
+    }
+
+    .foot1, .foot2, .foot3{
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+@media (min-width: 1023px){
+    .foot-p{
+        font-size: 1.7rem;
+    }
+
+    .foot1, .foot2, .foot3{
+        height: 5rem;
+        width: 5rem;
+    }
+}
+

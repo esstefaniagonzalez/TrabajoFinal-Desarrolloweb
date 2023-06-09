@@ -1,0 +1,98 @@
+.contacto h5{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem 1rem;
+    color: $negro;
+}
+
+.contacto-logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contacto img{
+    height: 3rem;
+    width: 3rem;
+    margin: 2rem 0rem;
+}
+
+.msj {
+    h3{
+        font-size: 1.5rem;
+        text-align: $titulos-aligne;
+        background-color: $rosa;
+        margin: 2rem 0rem;
+    }
+    
+    .nombre, .email, .tel, .text{
+        font-size: 1.5rem;
+    }
+    
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #input{
+        background-color: $rosa;
+        width: $titulos-size + 3;
+        font-size: 1rem;
+        margin: $titulos-margin;
+    }
+    
+    .nombre2, .email2, .tel2 {
+        height: 1.5rem;
+        width: 15rem;
+    }
+    
+    .text2{
+        height: 10rem;
+        width: 15rem;
+    }
+}
+
+@media (min-width:768px){
+    .contacto h5{
+        font-size: 1.5rem;
+    }
+    .contacto img{
+        height: 4rem;
+        width: 4rem;
+    }
+    .msj h3{
+        font-size: 1.7rem;
+    }
+    .nombre, .email, .tel, .text{
+        font-size: 1.7rem;
+        padding: 1rem;
+    }
+    .nombre2, .email2, .tel2{
+        height: 2rem;
+        width: 20rem;
+    }
+    .text2{
+        height: 15rem;
+        width: 20rem;
+    }
+}
+
+@media (min-width:1023px){
+    .contacto h5{
+        font-size: 1.7rem;
+    }
+    .contacto img{
+        height: 5rem;
+        width: 5rem;
+    }
+    .msj h3{
+        font-size: 1.9rem;
+    }
+    .nombre, .email, .tel, .text{
+        font-size: 1.9rem;
+        padding: 1rem;
+    }
+}
